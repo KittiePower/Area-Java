@@ -1,0 +1,57 @@
+/******************************************************************************
+"Area Java”
+Nombre: Medina Vazquez Elisa Michelle 
+Fecha: 070223
+*******************************************************************************/
+
+import java.util.*;
+ 
+public class Main {
+  public static void main(String[] args) {
+  Scanner teclado = new Scanner(System.in);
+  int opcion=0;
+  int base=0;
+  do{
+  System.out.println();
+  System.out.println();
+  System.out.println(" ======== MENU DE OPCIONES ========= ");
+  System.out.println(" ___________________________________ ");
+  System.out.println("1-Opcion 1");
+  System.out.println("2-Opcion 2");
+  System.out.println("3-Opcion 3");
+  System.out.println("4-Opcion 4");
+  System.out.println("5-Salir");
+  System.out.println(" ___________________________________ ");
+  System.out.println(" Ingrese una opcion ");
+opcion = teclado.nextInt();
+switch (opcion){
+
+				case 1:
+
+					System.out.println("Indica la base o altura: ");
+					base = teclado.nextInt();
+					System.out.println("\nEl area sombreada de la figura es " + (base*base/4));
+					break;
+				case 2:
+
+					System.out.println("Indica la base o altura: ");
+					base = teclado.nextInt();
+					System.out.println("\nEl area sombreada de la figura es "  + (base*3.14));
+					break;
+				case 3:
+
+					System.out.println("Indica la base o altura: ");
+					base = teclado.nextInt();
+					System.out.printf("\nEl area sombreada de la figura es "  + (base*3.14/4));
+					break;
+				case 4:
+
+					System.out.println("Indica la base o altura: ");
+					base = teclado.nextInt();
+					System.out.printf("\nEl area sombreada de la figura es "  + (base*4/3.14));
+					break;
+}					
+}while(opcion!=5);
+}
+}
+
